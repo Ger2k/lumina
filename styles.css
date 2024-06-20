@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000000;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#pet {
+    position: relative;
+    width: 210px; /* Ancho de un solo frame del sprite */
+    height: 392px; /* Altura de un solo frame del sprite */
+    margin: 0 auto;
+}
+
+#stats {
+    margin-top: 20px;
+}
+
+#stats p {
+    color: #fff;
+}
+
+#actions button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#sprite-container {
+    width: 210px; /* Ancho de un solo frame del sprite */
+    height: 392px; /* Altura de un solo frame del sprite */
+    background-image: url("img/sprite.jpg"); /* Ruta al sprite sheet */
+    background-repeat: no-repeat;
+    background-size: 1470px 392px; /* Ajustar el tamaño del sprite sheet */
+    position: relative;
+}
+
+@keyframes walk-animation {
+    0% { background-position: 0 0; }
+    14.28% { background-position: -2010px 0; }
+   /* 28.56% { background-position: -1420px 0; }
+    42.84% { background-position: -2630px 0; }
+    57.12% { background-position: -3440px 0; }
+    71.40% { background-position: -1050px 0; }
+    85.68% { background-position: -1260px 0; }
+    100% { background-position: -1470px 0; }*/
+}
